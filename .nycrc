@@ -1,0 +1,19 @@
+{
+  "check-coverage": true,
+  "per-file": true,
+  "extension": [
+    ".ts",
+    ".tsx"
+  ],
+  "exclude": [
+    "**/*.d.ts",
+    "test/**/*.spec.ts"
+  ],
+  "reporter": [
+    "lcov",
+    "text",
+    "html"
+  ],
+  "cache": true,
+  "all": true
+}
