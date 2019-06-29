@@ -1,0 +1,29 @@
+$font: 'Arial';
+$font-size: 14px;
+$text-black: #333;
+$text-white: #fefefe;
+$primary-color: #0c4cc3;
+$secondary-color: #f5a104;
+$success-color: #76e05c;
+$warning-color: #fae207;
+$danger-color: #CC3333;
+$info-color: #0fc3db;
+$text-color: $text-black;
+$link-color: #4858e9;
+$breakpoint-mobile: 769px;
+$breakpoint-tablet: 1024px;
+$border-radius: 5px;
+
+// @function color-yiq($color) {
+//   $r: red($color);
+//   $g: green($color);
+//   $b: blue($color);
+
+//   $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+//   @if ($yiq >= 150) {
+//     @return $text-black;
+//   } @else {
+//     @return $text-white;
+//   }
+// }

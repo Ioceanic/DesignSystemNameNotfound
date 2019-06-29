@@ -5,5 +5,5 @@ import { expect } from 'chai'
 describe('Test function', () => {
   it('test', () => {
     expect(true).to.equal(true)
-  });
-});
+  })
+})

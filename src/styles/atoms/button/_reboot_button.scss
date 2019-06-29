@@ -1,0 +1,27 @@
+button.ds-button {
+  border-radius: 0;
+  outline: 0;
+  border-width: 0;
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible; // Show the overflow in Edge
+  text-transform: none; // Remove the inheritance of text transform in Firefox
+  // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+  //    controls in Android 4.
+  // 2. Correct the inability to style clickable types in iOS and Safari.
+  -webkit-appearance: button; // 2
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  // Work around a Firefox/IE bug where the transparent `button` background
+  // results in a loss of the default `button` focus styles.
+  //
+  // Credit: https://github.com/suitcss/base/
+  &:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
