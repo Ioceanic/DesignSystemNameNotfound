@@ -31,7 +31,6 @@ class Icon extends Component<IconProps> {
         super(props)
 
         this.getIconDefinition = this.getIconDefinition.bind(this)
-        this.getIconPrefix = this.getIconPrefix.bind(this)
     }
 
     protected getIconDefinition (): IconDefinition {
