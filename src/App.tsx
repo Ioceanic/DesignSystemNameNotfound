@@ -1,17 +1,13 @@
 import React from 'react'
 import DemoButton from './DemoButton'
 import './styles/index.scss'
-import Icon from './atoms/Icon'
-import { Styles } from './constants/enum'
+import DemoIcon from './DemoIcon'
 
 const App: React.FC = () => {
   return (
     <div>
       <DemoButton />
-      <Icon
-          name="android"
-          style={ Styles.Brands }
-      />
+      <DemoIcon />
     </div>
   )
 }
