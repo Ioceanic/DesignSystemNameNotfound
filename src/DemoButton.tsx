@@ -1,8 +1,14 @@
 import React from 'react'
-import Button from './atoms/Button'
+import Button from './molecules/Button'
+import Icon from './atoms/Icon'
+// To change when available in Icon
+import { IconSizes, Styles } from './constants/enum'
 import './styles/index.scss'
 
 const DemoButton: React.FC = () => {
+  const firstIcon = <Icon name="atom" size={IconSizes.Sm} style={Styles.Solid} />
+  const secondIcon = <Icon name="beer" size={IconSizes.Lg} style={Styles.Solid} />
+
   return (
     <div>
       <p>Base Buttons</p>
@@ -27,8 +33,8 @@ const DemoButton: React.FC = () => {
       <Button type={Button.Types.Primary} disabled label="Disabled"></Button>
       <Button type={Button.Types.Secondary} label="With event" click={(event: Object) => { console.log(event);alert('Clicked !'); }}></Button>
       <Button type={Button.Types.Secondary} disabled label="With event but disabled" click={(event: Object) => { console.log(event);alert('Clicked !'); }}></Button>
-      <Button type={Button.Types.Success} label="Icon" icon="Todo"></Button>
-      <Button type={Button.Types.Warning} label="Icon position" icon="Todo" iconPos={Button.IconPositions.Left}></Button>
+      <Button type={Button.Types.Success} label="Icon" icon={firstIcon}></Button>
+      <Button type={Button.Types.Warning} label="Icon position" icon={secondIcon} iconPos={Button.IconPositions.Left}></Button>
       <Button type={Button.Types.Danger} label="Submit button" submit></Button>
       <Button type={Button.Types.None} label="Small" size={Button.Sizes.Small}></Button>
       <Button type={Button.Types.None} label="Normal" size={Button.Sizes.Normal}></Button>

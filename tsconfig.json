@@ -17,9 +17,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "react"
   },
   "include": [
-    "src"
-  ]
+    "src/**/*"
+  ],
+  "typedocOptions": {
+    "ignoreCompilerErrors": true,
+    "mode": "modules",
+    "out": "./doc"
+  }
 }
