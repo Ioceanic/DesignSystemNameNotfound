@@ -1,0 +1,8 @@
+@import './_properties';
+@import './atoms/index';
+
+body {
+  font-family: $font;
+  font-size: $font-size;
+  color: $text-color;
+}
